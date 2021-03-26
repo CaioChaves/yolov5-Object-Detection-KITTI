@@ -1,10 +1,10 @@
-This repository contributes at finetuning the object detector 'yolov5' to the driving images on KITTI Dataset. 
+This repository contributes at finetuning the object detector 'yolov5' to the images on KITTI Dataset. 
 
-![alt text](https://github.com/CaioChaves/yolov5-Object-Detection-KITTI/runs/detect/final_eval_train/000011.png?raw=true)
+![alt text](https://github.com/CaioChaves/yolov5-Object-Detection-KITTI/blob/master/runs/detect/final_eval_train/000011.png?raw=true)
 
 **Transfer learning:** The idea of transfer learning in the field of Deep Neural Networks is to use knowledge acquired during a model’s training for a initial task as a starting point for learning another task of interest. By doing so, the new task can be learnt more easily and faster, because part of the learning process that is shared across tasks or datasets has already been done. 
 
-![alt text](https://github.com/CaioChaves/yolov5-Object-Detection-KITTI/runs/train/exp15/precision_recall_curve.png?raw=true)
+![alt text](https://github.com/CaioChaves/yolov5-Object-Detection-KITTI/blob/master/runs/train/exp15/precision_recall_curve.png?raw=true)
 
 **KITTI dataset classes:**  The original model had been trained on MS COCO dataset (80 classes). By finetuning it, we are able to improve the overall performance by specializing it to the KITTI's 8 classes, which represent only dynamic objects relevant to driving environments such as roads and urbain streets.
 
