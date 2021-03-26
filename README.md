@@ -6,7 +6,7 @@ This repository contributes at finetuning the object detector 'yolov5' to the im
 
 ![alt text](https://github.com/CaioChaves/yolov5-Object-Detection-KITTI/blob/master/runs/train/exp15/precision_recall_curve.png?raw=true)
 
-**KITTI dataset classes:**  The original model had been trained on MS COCO dataset (80 classes). By finetuning it, we are able to improve the overall performance by specializing it to the KITTI's 8 classes, which represent only dynamic objects relevant to driving environments such as roads and urbain streets.
+**KITTI dataset classes:**  The original model had been trained on MS COCO dataset (80 classes). By finetuning it, we are able to improve the overall performance by specializing it to the KITTI's 8 classes, which represent only dynamic objects relevant to driving environments such as roads and urbain streets. 
 
 The original 'yolov5' repository represents Ultralytics open-source research into future object detection methods, and incorporates lessons learned and best practices evolved over thousands of hours of training and evolution on anonymized client datasets. **All code and models are under active development, and are subject to modification or deletion without notice.** Use at your own risk.
 
@@ -62,6 +62,7 @@ $ python detect.py --source 0  # webcam
 To run inference on example images in `data/images`:
 ```bash
 $ python detect.py --source data/images --weights yolov5s.pt --conf 0.25
+$ python detect.py --source data/images/000031.png --weights runs/train/exp15/weights/best.pt --conf 0.25 # Model finetuned on KITTI
 
 Namespace(agnostic_nms=False, augment=False, classes=None, conf_thres=0.25, device='', exist_ok=False, img_size=640, iou_thres=0.45, name='exp', project='runs/detect', save_conf=False, save_txt=False, source='data/images/', update=False, view_img=False, weights=['yolov5s.pt'])
 YOLOv5 v4.0-96-g83dc1b4 torch 1.7.0+cu101 CUDA:0 (Tesla V100-SXM2-16GB, 16160.5MB)
