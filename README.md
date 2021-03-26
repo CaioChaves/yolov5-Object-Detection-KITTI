@@ -119,8 +119,3 @@ Ultralytics is a U.S.-based particle physics and AI startup with over 6 years of
 - **Custom data training**, hyperparameter evolution, and model exportation to any destination.
 
 For business inquiries and professional support requests please visit us at https://www.ultralytics.com. 
-
-
-## Contact
-
-**Issues should be raised directly in the repository.** For business inquiries or professional support requests please visit https://www.ultralytics.com or email Glenn Jocher at glenn.jocher@ultralytics.com. 
